@@ -1,13 +1,18 @@
 public class Rover {
+
+    private int x = 0;
+    private int y = 0;
+    private char direction = 'N';
+
     public int x() {
-        return 0;
+        return x;
     }
 
     public int y() {
-        return 0;
+        return y;
     }
 
     public char direction() {
-        return 'N';
+        return direction;
     }
 }
