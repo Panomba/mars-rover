@@ -42,7 +42,7 @@ public class Rover {
                 else direction = 'E';
             } else if ('M' == command.charAt(i)) {
                 if (direction == 'N') y = y + 1;
-                else if (direction == 'S') y = -1;
+                else if (direction == 'S') y = y - 1;
                 else if (direction == 'W') x = -1;
                 else x = 1;
             }
