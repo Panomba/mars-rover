@@ -30,25 +30,20 @@ public class Rover {
 
     public void execute(String command) {
         if ("L".equals(command)) {
-            if (direction == 'N')
-                direction = 'W';
-            else if (direction == 'W')
-                direction = 'S';
-            else if (direction == 'S')
-                direction = 'E';
-            else
-                direction = 'N';
+            if (direction == 'N') direction = 'W';
+            else if (direction == 'W') direction = 'S';
+            else if (direction == 'S') direction = 'E';
+            else direction = 'N';
         } else if ("R".equals(command)) {
             if (direction == 'E') direction = 'S';
             else if (direction == 'S') direction = 'W';
             else if (direction == 'W') direction = 'N';
             else direction = 'E';
         } else if ("M".equals(command)) {
-            if (direction == 'N')
-                y = 1;
-            else if (direction == 'S')
-                y = -1;
-            x = 1;
+            if (direction == 'N') y = 1;
+            else if (direction == 'S') y = -1;
+            else if (direction == 'W') x = -1;
+            else x = 1;
         }
     }
 }
