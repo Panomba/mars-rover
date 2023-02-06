@@ -29,21 +29,23 @@ public class Rover {
     }
 
     public void execute(String command) {
-        if ("L".equals(command)) {
-            if (direction == 'N') direction = 'W';
-            else if (direction == 'W') direction = 'S';
-            else if (direction == 'S') direction = 'E';
-            else direction = 'N';
-        } else if ("R".equals(command)) {
-            if (direction == 'E') direction = 'S';
-            else if (direction == 'S') direction = 'W';
-            else if (direction == 'W') direction = 'N';
-            else direction = 'E';
-        } else if ("M".equals(command)) {
-            if (direction == 'N') y = 1;
-            else if (direction == 'S') y = -1;
-            else if (direction == 'W') x = -1;
-            else x = 1;
+        for (int i = 0; i < command.length(); i++) {
+            if ('L' == command.charAt(i)) {
+                if (direction == 'N') direction = 'W';
+                else if (direction == 'W') direction = 'S';
+                else if (direction == 'S') direction = 'E';
+                else direction = 'N';
+            } else if ('R' == command.charAt(i)) {
+                if (direction == 'E') direction = 'S';
+                else if (direction == 'S') direction = 'W';
+                else if (direction == 'W') direction = 'N';
+                else direction = 'E';
+            } else if ('M' == command.charAt(i)) {
+                if (direction == 'N') y = y + 1;
+                else if (direction == 'S') y = -1;
+                else if (direction == 'W') x = -1;
+                else x = 1;
+            }
         }
     }
 }
