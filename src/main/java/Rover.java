@@ -31,6 +31,8 @@ public class Rover {
     public void execute(String command) {
         if ("L".equals(command) && direction == 'N')
             direction = 'W';
+        else if ("L".equals(command) && direction == 'W')
+            direction = 'S';
         else if (direction == 'E') direction = 'S';
         else if (direction == 'S') direction = 'W';
         else if (direction == 'W') direction = 'N';
