@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DisplayName("When direction is north and rover turns right")
-class WhenDirectionIsNorthAndRoverTurnsRight {
+class WhenDirectionIsNorthAndRoverTurnsRightTest {
 
     @Test
     @DisplayName("then direction should be east")
