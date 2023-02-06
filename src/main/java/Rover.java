@@ -44,7 +44,10 @@ public class Rover {
             else if (direction == 'W') direction = 'N';
             else direction = 'E';
         } else if ("M".equals(command)) {
-            y = 1;
+            if (direction == 'N')
+                y = 1;
+            else if (direction == 'S')
+                y = -1;
             x = 1;
         }
     }
