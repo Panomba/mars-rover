@@ -15,4 +15,8 @@ public class Rover {
     public char direction() {
         return direction;
     }
+
+    public void execute(String command) {
+        direction = 'E';
+    }
 }
