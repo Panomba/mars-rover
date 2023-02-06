@@ -44,7 +44,7 @@ public class Rover {
                 if (direction == 'N') y = y + 1;
                 else if (direction == 'S') y = y - 1;
                 else if (direction == 'W') x = -1;
-                else x = 1;
+                else x = x + 1;
             }
         }
     }
