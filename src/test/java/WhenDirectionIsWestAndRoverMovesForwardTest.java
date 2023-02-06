@@ -17,4 +17,15 @@ class WhenDirectionIsWestAndRoverMovesForwardTest {
         assertThat(rover.x()).isEqualTo(-1);
     }
 
+    @Test
+    @DisplayName("then x should be equal to -2 if rover moves twice")
+    void thenXShouldBeEqualTo2IfRoverMovesTwice() {
+        //ARRANGE
+        Rover rover = new Rover(0, 0, 'W');
+        //ACT
+        rover.execute("MM");
+        //ASSERT
+        assertThat(rover.x()).isEqualTo(-2);
+    }
+
 }
