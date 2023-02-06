@@ -29,11 +29,9 @@ public class Rover {
     }
 
     public void execute(String command) {
-        if (direction == 'E')
-            direction = 'S';
-        else if (direction == 'S')
-            direction = 'W';
-        else
-            direction = 'E';
+        if (direction == 'E') direction = 'S';
+        else if (direction == 'S') direction = 'W';
+        else if (direction == 'W') direction = 'N';
+        else direction = 'E';
     }
 }
