@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f214ca6-ef5d-4158-b82b-68f27de6e613" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/WhenDirectionIsWestAndRoverTurnsLeftTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WhenDirectionIsEastAndRoverTurnsLeft.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
