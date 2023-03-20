@@ -29,15 +29,10 @@ public class MarsRover {
     }
 
     public void execute(String command) {
-        for (int i = 0; i < command.length(); i++) {
-            if ('L' == command.charAt(i)) {
-                turnLeft();
-            } else if ('R' == command.charAt(i)) {
-                turnRight();
-            } else if ('M' == command.charAt(i)) {
-                moveForward();
-            }
-        }
+        for (int i = 0; i < command.length(); i++)
+            if ('L' == command.charAt(i)) turnLeft();
+            else if ('R' == command.charAt(i)) turnRight();
+            else if ('M' == command.charAt(i)) moveForward();
     }
 
     private void moveForward() {
