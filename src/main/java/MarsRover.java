@@ -1,8 +1,8 @@
 public class MarsRover {
 
-    private int x = 0;
-    private int y = 0;
-    private char direction = 'N';
+    private int x;
+    private int y;
+    private char direction;
 
     public MarsRover() {
         this.x = 0;
