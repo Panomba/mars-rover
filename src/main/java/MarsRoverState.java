@@ -6,6 +6,12 @@ public class MarsRoverState {
     public MarsRoverState() {
     }
 
+    public MarsRoverState(int x, int y, char direction) {
+        this.x = x;
+        this.y = y;
+        this.direction = direction;
+    }
+
     public int x() {
         return x;
     }
