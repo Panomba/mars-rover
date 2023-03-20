@@ -3,11 +3,11 @@ public class MarsRover {
     private final MarsRoverState marsRoverState;
 
     public MarsRover() {
-        marsRoverState = new MarsRoverState(0, 0, 'N');
+        marsRoverState = new MarsRoverNorthState(0, 0, 'N');
     }
 
     public MarsRover(int x, int y, char direction) {
-        marsRoverState = new MarsRoverState(x, y, direction);
+        marsRoverState = new MarsRoverNorthState(x, y, direction);
     }
 
     public int x() {

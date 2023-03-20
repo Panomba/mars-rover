@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f214ca6-ef5d-4158-b82b-68f27de6e613" name="Changes" comment="" />
+    <list default="true" id="9f214ca6-ef5d-4158-b82b-68f27de6e613" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/MarsRoverEastState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MarsRoverEastState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MarsRoverState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MarsRoverState.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +18,7 @@
       <list>
         <option value="TestClass" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -39,6 +43,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">

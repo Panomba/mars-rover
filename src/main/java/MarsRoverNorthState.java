@@ -1,4 +1,4 @@
-public class MarsRoverNorthState {
+public class MarsRoverNorthState implements MarsRoverState {
     private int x;
     private int y;
     private char direction;
@@ -21,21 +21,21 @@ public class MarsRoverNorthState {
         return direction;
     }
 
-    void turnLeft() {
+    public void turnLeft() {
         if (direction == 'N') direction = 'W';
         else if (direction == 'W') direction = 'S';
         else if (direction == 'S') direction = 'E';
         else direction = 'N';
     }
 
-    void turnRight() {
+    public void turnRight() {
         if (direction == 'E') direction = 'S';
         else if (direction == 'S') direction = 'W';
         else if (direction == 'W') direction = 'N';
         else direction = 'E';
     }
 
-    void moveForward() {
+    public void moveForward() {
         if (direction == 'N') y = y + 1;
         else if (direction == 'S') y = y - 1;
         else if (direction == 'W') x = x - 1;
