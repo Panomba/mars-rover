@@ -1,7 +1,7 @@
 public class MarsRoverState {
-    int x;
-    int y;
-    char direction;
+    private int x;
+    private int y;
+    private char direction;
 
     public MarsRoverState(int x, int y, char direction) {
         this.x = x;

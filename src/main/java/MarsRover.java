@@ -4,16 +4,10 @@ public class MarsRover {
 
     public MarsRover() {
         marsRoverState = new MarsRoverState(0, 0, 'N');
-        this.marsRoverState.x = 0;
-        this.marsRoverState.y = 0;
-        this.marsRoverState.direction = 'N';
     }
 
     public MarsRover(int x, int y, char direction) {
         marsRoverState = new MarsRoverState(x, y, direction);
-        this.marsRoverState.x = x;
-        this.marsRoverState.y = y;
-        this.marsRoverState.direction = direction;
     }
 
     public int x() {
