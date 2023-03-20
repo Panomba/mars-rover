@@ -3,9 +3,6 @@ public class MarsRoverState {
     int y;
     char direction;
 
-    public MarsRoverState() {
-    }
-
     public MarsRoverState(int x, int y, char direction) {
         this.x = x;
         this.y = y;
