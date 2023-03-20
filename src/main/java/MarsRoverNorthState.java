@@ -3,6 +3,12 @@ public class MarsRoverNorthState implements MarsRoverState {
     private int y;
     private char direction;
 
+    public MarsRoverNorthState(int x, int y) {
+        this.x = x;
+        this.y = y;
+        this.direction = 'N';
+    }
+
     public MarsRoverNorthState(int x, int y, char direction) {
         this.x = x;
         this.y = y;
@@ -22,11 +28,11 @@ public class MarsRoverNorthState implements MarsRoverState {
     }
 
     public MarsRoverState turnLeft() {
-        return new MarsRoverWestState(x, y, 'W');
+        return new MarsRoverWestState(x, y);
     }
 
     public MarsRoverState turnRight() {
-        return new MarsRoverEastState(x, y, 'E');
+        return new MarsRoverEastState(x, y);
     }
 
     public MarsRoverState moveForward() {

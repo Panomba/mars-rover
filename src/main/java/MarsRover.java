@@ -8,10 +8,10 @@ public class MarsRover {
 
     public MarsRover(int x, int y, char direction) {
         switch (direction) {
-            case 'E' -> marsRoverState = new MarsRoverEastState(x, y, direction);
-            case 'S' -> marsRoverState = new MarsRoverSouthState(x, y, direction);
-            case 'W' -> marsRoverState = new MarsRoverWestState(x, y, direction);
-            default -> marsRoverState = new MarsRoverNorthState(x, y, direction);
+            case 'E' -> marsRoverState = new MarsRoverEastState(x, y);
+            case 'S' -> marsRoverState = new MarsRoverSouthState(x, y);
+            case 'W' -> marsRoverState = new MarsRoverWestState(x, y);
+            default -> marsRoverState = new MarsRoverNorthState(x, y);
         }
     }
 

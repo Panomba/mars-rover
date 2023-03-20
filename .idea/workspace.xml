@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f214ca6-ef5d-4158-b82b-68f27de6e613" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f4558e03bed1970e76cbd944c289dae6b8f56acb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MarsRover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MarsRover.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MarsRoverEastState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MarsRoverEastState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MarsRoverNorthState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MarsRoverNorthState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MarsRoverSouthState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MarsRoverSouthState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhenRoverIsPlaced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhenRoverIsPlacedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MarsRoverWestState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MarsRoverWestState.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

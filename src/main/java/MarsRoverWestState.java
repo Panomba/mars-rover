@@ -3,6 +3,12 @@ public class MarsRoverWestState implements MarsRoverState {
     private int y;
     private char direction;
 
+    public MarsRoverWestState(int x, int y) {
+        this.x = x;
+        this.y = y;
+        this.direction = 'W';
+    }
+
     public MarsRoverWestState(int x, int y, char direction) {
         this.x = x;
         this.y = y;
