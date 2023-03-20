@@ -10,7 +10,7 @@ class WhenDirectionIsWestAndRoverMovesForwardTest {
     @DisplayName("then x should be equal to -1")
     void thenXShouldBeEqualTo1() {
         //ARRANGE
-        MarsRover marsRover = new MarsRover(0, 0, 'W');
+        MarsRover marsRover = new MarsRover(new MarsRoverWestState(0, 0));
         //ACT
         marsRover.execute("M");
         //ASSERT
@@ -21,7 +21,7 @@ class WhenDirectionIsWestAndRoverMovesForwardTest {
     @DisplayName("then x should be equal to -2 if rover moves twice")
     void thenXShouldBeEqualTo2IfRoverMovesTwice() {
         //ARRANGE
-        MarsRover marsRover = new MarsRover(0, 0, 'W');
+        MarsRover marsRover = new MarsRover(new MarsRoverWestState(0, 0));
         //ACT
         marsRover.execute("MM");
         //ASSERT

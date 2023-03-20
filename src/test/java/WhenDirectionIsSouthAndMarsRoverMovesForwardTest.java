@@ -10,7 +10,7 @@ class WhenDirectionIsSouthAndMarsRoverMovesForwardTest {
     @DisplayName("then y should be -1")
     void thenYShouldBe1() {
         //ARRANGE
-        MarsRover marsRover = new MarsRover(0, 0, 'S');
+        MarsRover marsRover = new MarsRover(new MarsRoverSouthState(0, 0));
         //ACT
         marsRover.execute("M");
         //ASSERT
@@ -21,7 +21,7 @@ class WhenDirectionIsSouthAndMarsRoverMovesForwardTest {
     @DisplayName("then y should be -2 if rover moves twice")
     void thenYShouldBe2IfRoverMovesTwice() {
         //ARRANGE
-        MarsRover marsRover = new MarsRover(0, 0, 'S');
+        MarsRover marsRover = new MarsRover(new MarsRoverSouthState(0, 0));
         //ACT
         marsRover.execute("MM");
         //ASSERT

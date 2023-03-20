@@ -10,7 +10,7 @@ class WhenDirectionIsSouthAndMarsRoverTurnsRightTest {
     @DisplayName("then direction should be west")
     void thenDirectionShouldBeWest() {
         //ARRANGE
-        MarsRover marsRover = new MarsRover(0, 0, 'S');
+        MarsRover marsRover = new MarsRover(new MarsRoverSouthState(0, 0));
         //ACT
         marsRover.execute("R");
         //ASSERT

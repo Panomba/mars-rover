@@ -6,13 +6,8 @@ public class MarsRover {
         marsRoverState = new MarsRoverNorthState(0, 0);
     }
 
-    public MarsRover(int x, int y, char direction) {
-        switch (direction) {
-            case 'E' -> marsRoverState = new MarsRoverEastState(x, y);
-            case 'S' -> marsRoverState = new MarsRoverSouthState(x, y);
-            case 'W' -> marsRoverState = new MarsRoverWestState(x, y);
-            default -> marsRoverState = new MarsRoverNorthState(x, y);
-        }
+    MarsRover(MarsRoverState marsRoverState) {
+        this.marsRoverState = marsRoverState;
     }
 
     public int x() {
