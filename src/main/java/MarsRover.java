@@ -35,16 +35,4 @@ public class MarsRover {
             else if ('M' == command.charAt(i)) marsRoverState.moveForward();
     }
 
-    private void turnLeft() {
-        marsRoverState.turnLeft();
-    }
-
-    private void turnRight() {
-        marsRoverState.turnRight();
-    }
-
-    private void moveForward() {
-        marsRoverState.moveForward();
-    }
-
 }
