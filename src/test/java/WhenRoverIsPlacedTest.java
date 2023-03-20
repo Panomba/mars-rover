@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DisplayName("When rover is placed")
-class WhenRoverIsPlaced {
+class WhenRoverIsPlacedTest {
 
     @Test
     @DisplayName("then x should be 0 y should be 0 and direction should be North")

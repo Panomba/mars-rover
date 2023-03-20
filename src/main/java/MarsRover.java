@@ -7,7 +7,12 @@ public class MarsRover {
     }
 
     public MarsRover(int x, int y, char direction) {
-        marsRoverState = new MarsRoverNorthState(x, y, direction);
+        switch (direction) {
+            case 'E' -> marsRoverState = new MarsRoverEastState(x, y, direction);
+            case 'S' -> marsRoverState = new MarsRoverSouthState(x, y, direction);
+            case 'W' -> marsRoverState = new MarsRoverWestState(x, y, direction);
+            default -> marsRoverState = new MarsRoverNorthState(x, y, direction);
+        }
     }
 
     public int x() {

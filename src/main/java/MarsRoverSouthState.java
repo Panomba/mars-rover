@@ -22,19 +22,11 @@ public class MarsRoverSouthState implements MarsRoverState {
     }
 
     public MarsRoverState turnLeft() {
-        if (direction == 'N') direction = 'W';
-        else if (direction == 'W') direction = 'S';
-        else if (direction == 'S') direction = 'E';
-        else direction = 'N';
-        return new MarsRoverEastState(x, y, direction);
+        return new MarsRoverEastState(x, y, 'E');
     }
 
     public MarsRoverState turnRight() {
-        if (direction == 'E') direction = 'S';
-        else if (direction == 'S') direction = 'W';
-        else if (direction == 'W') direction = 'N';
-        else direction = 'E';
-        return new MarsRoverWestState(x, y, direction);
+        return new MarsRoverWestState(x, y, 'W');
     }
 
     public MarsRoverState moveForward() {
