@@ -3,7 +3,7 @@ public class MarsRover {
     private MarsRoverState marsRoverState;
 
     public MarsRover() {
-        marsRoverState = new MarsRoverNorthState(0, 0, 'N');
+        marsRoverState = new MarsRoverNorthState(0, 0);
     }
 
     public MarsRover(int x, int y, char direction) {

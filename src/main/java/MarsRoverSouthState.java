@@ -9,12 +9,6 @@ public class MarsRoverSouthState implements MarsRoverState {
         this.direction = 'S';
     }
 
-    public MarsRoverSouthState(int x, int y, char direction) {
-        this.x = x;
-        this.y = y;
-        this.direction = direction;
-    }
-
     public int x() {
         return x;
     }
