@@ -3,18 +3,19 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@DisplayName("When direction is south and rover turns left")
-class WhenDirectionIsSouthAndRoverTurnsLeftTest {
+@DisplayName("When direction is north and rover turns right")
+class WhenDirectionIsNorthAndMarsRoverTurnsRightTest {
 
     @Test
     @DisplayName("then direction should be east")
     void thenDirectionShouldBeEast() {
         //ARRANGE
-        Rover rover = new Rover(0, 0, 'S');
+        MarsRover marsRover = new MarsRover();
         //ACT
-        rover.execute("L");
+        marsRover.execute("R");
         //ASSERT
-        assertThat(rover.direction()).isEqualTo('E');
+        assertThat(marsRover.direction()).isEqualTo('E');
     }
+
 
 }

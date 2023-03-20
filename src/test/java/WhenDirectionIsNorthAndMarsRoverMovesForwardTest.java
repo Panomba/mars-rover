@@ -4,28 +4,28 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DisplayName("When direction is north and rover moves forward")
-class WhenDirectionIsNorthAndRoverMovesForwardTest {
+class WhenDirectionIsNorthAndMarsRoverMovesForwardTest {
 
     @Test
     @DisplayName("then y should be 1")
     void thenYShouldBe1() {
         //ARRANGE
-        Rover rover = new Rover(0, 0, 'N');
+        MarsRover marsRover = new MarsRover(0, 0, 'N');
         //ACT
-        rover.execute("M");
+        marsRover.execute("M");
         //ASSERT
-        assertThat(rover.y()).isEqualTo(1);
+        assertThat(marsRover.y()).isEqualTo(1);
     }
 
     @Test
     @DisplayName("then y should be 2 if rover moves twice")
     void thenYShouldBe2IfRoverMovesTwice() {
         //ARRANGE
-        Rover rover = new Rover(0, 0, 'N');
+        MarsRover marsRover = new MarsRover(0, 0, 'N');
         //ACT
-        rover.execute("MM");
+        marsRover.execute("MM");
         //ASSERT
-        assertThat(rover.y()).isEqualTo(2);
+        assertThat(marsRover.y()).isEqualTo(2);
     }
 
 }

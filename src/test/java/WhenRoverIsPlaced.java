@@ -10,13 +10,13 @@ class WhenRoverIsPlaced {
     @DisplayName("then x should be 0 y should be 0 and direction should be North")
     void thenXShouldBe0YShouldBe0AndDirectionShouldBeNorth() {
         //ARRANGE
-        Rover rover;
+        MarsRover marsRover;
         //ACT
-        rover = new Rover();
+        marsRover = new MarsRover();
         //ASSERT
-        assertThat(rover.x()).isZero();
-        assertThat(rover.y()).isZero();
-        assertThat(rover.direction()).isEqualTo('N');
+        assertThat(marsRover.x()).isZero();
+        assertThat(marsRover.y()).isZero();
+        assertThat(marsRover.direction()).isEqualTo('N');
     }
 
 }

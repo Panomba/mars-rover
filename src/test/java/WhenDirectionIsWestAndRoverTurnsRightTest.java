@@ -10,11 +10,11 @@ class WhenDirectionIsWestAndRoverTurnsRightTest {
     @DisplayName("then direction should be north")
     void thenDirectionShouldBeNorth() {
         //ARRANGE
-        Rover rover = new Rover(0, 0, 'W');
+        MarsRover marsRover = new MarsRover(0, 0, 'W');
         //ACT
-        rover.execute("R");
+        marsRover.execute("R");
         //ASSERT
-        assertThat(rover.direction()).isEqualTo('N');
+        assertThat(marsRover.direction()).isEqualTo('N');
     }
 
 }

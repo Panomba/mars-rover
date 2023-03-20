@@ -1,16 +1,16 @@
-public class Rover {
+public class MarsRover {
 
     private int x = 0;
     private int y = 0;
     private char direction = 'N';
 
-    public Rover() {
+    public MarsRover() {
         this.x = 0;
         this.y = 0;
         this.direction = 'N';
     }
 
-    public Rover(int x, int y, char direction) {
+    public MarsRover(int x, int y, char direction) {
         this.x = x;
         this.y = y;
         this.direction = direction;
