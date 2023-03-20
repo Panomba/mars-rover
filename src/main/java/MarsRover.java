@@ -1,6 +1,6 @@
 public class MarsRover {
 
-    private final MarsRoverState marsRoverState;
+    private MarsRoverState marsRoverState;
 
     public MarsRover() {
         marsRoverState = new MarsRoverNorthState(0, 0, 'N');
@@ -24,9 +24,9 @@ public class MarsRover {
 
     public void execute(String command) {
         for (int i = 0; i < command.length(); i++)
-            if ('L' == command.charAt(i)) marsRoverState.turnLeft();
-            else if ('R' == command.charAt(i)) marsRoverState.turnRight();
-            else if ('M' == command.charAt(i)) marsRoverState.moveForward();
+            if ('L' == command.charAt(i)) marsRoverState = marsRoverState.turnLeft();
+            else if ('R' == command.charAt(i)) marsRoverState = marsRoverState.turnRight();
+            else if ('M' == command.charAt(i)) marsRoverState = marsRoverState.moveForward();
     }
 
 }

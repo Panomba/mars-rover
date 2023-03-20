@@ -26,7 +26,7 @@ public class MarsRoverSouthState implements MarsRoverState {
         else if (direction == 'W') direction = 'S';
         else if (direction == 'S') direction = 'E';
         else direction = 'N';
-        return this;
+        return new MarsRoverEastState(x, y, direction);
     }
 
     public MarsRoverState turnRight() {
@@ -34,7 +34,7 @@ public class MarsRoverSouthState implements MarsRoverState {
         else if (direction == 'S') direction = 'W';
         else if (direction == 'W') direction = 'N';
         else direction = 'E';
-        return this;
+        return new MarsRoverWestState(x, y, direction);
     }
 
     public MarsRoverState moveForward() {
