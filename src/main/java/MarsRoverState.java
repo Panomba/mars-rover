@@ -5,9 +5,9 @@ public interface MarsRoverState {
 
     char direction();
 
-    void turnLeft();
+    MarsRoverState turnLeft();
 
-    void turnRight();
+    MarsRoverState turnRight();
 
-    void moveForward();
+    MarsRoverState moveForward();
 }

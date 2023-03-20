@@ -25,26 +25,29 @@ public class MarsRoverEastState implements MarsRoverState {
     }
 
     @Override
-    public void turnLeft() {
+    public MarsRoverState turnLeft() {
         if (direction == 'N') direction = 'W';
         else if (direction == 'W') direction = 'S';
         else if (direction == 'S') direction = 'E';
         else direction = 'N';
+        return this;
     }
 
     @Override
-    public void turnRight() {
+    public MarsRoverState turnRight() {
         if (direction == 'E') direction = 'S';
         else if (direction == 'S') direction = 'W';
         else if (direction == 'W') direction = 'N';
         else direction = 'E';
+        return this;
     }
 
     @Override
-    public void moveForward() {
+    public MarsRoverState moveForward() {
         if (direction == 'N') y = y + 1;
         else if (direction == 'S') y = y - 1;
         else if (direction == 'W') x = x - 1;
         else x = x + 1;
+        return this;
     }
 }
