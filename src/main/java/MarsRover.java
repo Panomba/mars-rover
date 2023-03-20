@@ -31,10 +31,7 @@ public class MarsRover {
     public void execute(String command) {
         for (int i = 0; i < command.length(); i++) {
             if ('L' == command.charAt(i)) {
-                if (direction == 'N') direction = 'W';
-                else if (direction == 'W') direction = 'S';
-                else if (direction == 'S') direction = 'E';
-                else direction = 'N';
+                turnLeft();
             } else if ('R' == command.charAt(i)) {
                 if (direction == 'E') direction = 'S';
                 else if (direction == 'S') direction = 'W';
@@ -47,5 +44,12 @@ public class MarsRover {
                 else x = x + 1;
             }
         }
+    }
+
+    private void turnLeft() {
+        if (direction == 'N') direction = 'W';
+        else if (direction == 'W') direction = 'S';
+        else if (direction == 'S') direction = 'E';
+        else direction = 'N';
     }
 }
