@@ -1,59 +1,48 @@
 public class MarsRover {
 
-    private int x;
-    private int y;
-    private char direction;
+    private final MarsRoverState marsRoverState = new MarsRoverState();
 
     public MarsRover() {
-        this.x = 0;
-        this.y = 0;
-        this.direction = 'N';
+        this.marsRoverState.x = 0;
+        this.marsRoverState.y = 0;
+        this.marsRoverState.direction = 'N';
     }
 
     public MarsRover(int x, int y, char direction) {
-        this.x = x;
-        this.y = y;
-        this.direction = direction;
+        this.marsRoverState.x = x;
+        this.marsRoverState.y = y;
+        this.marsRoverState.direction = direction;
     }
 
     public int x() {
-        return x;
+        return marsRoverState.x();
     }
 
     public int y() {
-        return y;
+        return marsRoverState.y();
     }
 
     public char direction() {
-        return direction;
+        return marsRoverState.direction();
     }
 
     public void execute(String command) {
         for (int i = 0; i < command.length(); i++)
-            if ('L' == command.charAt(i)) turnLeft();
-            else if ('R' == command.charAt(i)) turnRight();
-            else if ('M' == command.charAt(i)) moveForward();
+            if ('L' == command.charAt(i)) marsRoverState.turnLeft();
+            else if ('R' == command.charAt(i)) marsRoverState.turnRight();
+            else if ('M' == command.charAt(i)) marsRoverState.moveForward();
     }
 
     private void turnLeft() {
-        if (direction == 'N') direction = 'W';
-        else if (direction == 'W') direction = 'S';
-        else if (direction == 'S') direction = 'E';
-        else direction = 'N';
+        marsRoverState.turnLeft();
     }
 
     private void turnRight() {
-        if (direction == 'E') direction = 'S';
-        else if (direction == 'S') direction = 'W';
-        else if (direction == 'W') direction = 'N';
-        else direction = 'E';
+        marsRoverState.turnRight();
     }
 
     private void moveForward() {
-        if (direction == 'N') y = y + 1;
-        else if (direction == 'S') y = y - 1;
-        else if (direction == 'W') x = x - 1;
-        else x = x + 1;
+        marsRoverState.moveForward();
     }
 
 }
