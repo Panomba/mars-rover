@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f214ca6-ef5d-4158-b82b-68f27de6e613" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MarsRover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhenDirectionIsEastAndRoverMovesForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhenDirectionIsEastAndMarsRoverMovesForwardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhenDirectionIsEastAndRoverTurnsLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhenDirectionIsEastAndMarsRoverTurnsLeft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhenDirectionIsEastAndRoverTurnsRightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhenDirectionIsEastAndMarsRoverTurnsRightTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhenDirectionIsNorthAndRoverMovesForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhenDirectionIsNorthAndMarsRoverMovesForwardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhenDirectionIsNorthAndRoverTurnsLeftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhenDirectionIsNorthAndMarsRoverTurnsLeftTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhenDirectionIsNorthAndRoverTurnsRightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhenDirectionIsNorthAndMarsRoverTurnsRightTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhenDirectionIsSouthAndRoverMovesForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhenDirectionIsSouthAndMarsRoverMovesForwardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhenDirectionIsSouthAndRoverTurnsLeftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhenDirectionIsSouthAndMarsRoverTurnsLeftTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhenDirectionIsSouthAndRoverTurnsRightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhenDirectionIsSouthAndMarsRoverTurnsRightTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhenDirectionIsWestAndRoverMovesForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhenDirectionIsWestAndRoverMovesForwardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhenDirectionIsWestAndRoverTurnsLeftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhenDirectionIsWestAndRoverTurnsLeftTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhenDirectionIsWestAndRoverTurnsRightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhenDirectionIsWestAndRoverTurnsRightTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhenRoverIsPlaced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhenRoverIsPlaced.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MarsRover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MarsRover.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

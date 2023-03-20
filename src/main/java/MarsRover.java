@@ -33,10 +33,7 @@ public class MarsRover {
             if ('L' == command.charAt(i)) {
                 turnLeft();
             } else if ('R' == command.charAt(i)) {
-                if (direction == 'E') direction = 'S';
-                else if (direction == 'S') direction = 'W';
-                else if (direction == 'W') direction = 'N';
-                else direction = 'E';
+                turnRight();
             } else if ('M' == command.charAt(i)) {
                 if (direction == 'N') y = y + 1;
                 else if (direction == 'S') y = y - 1;
@@ -44,6 +41,13 @@ public class MarsRover {
                 else x = x + 1;
             }
         }
+    }
+
+    private void turnRight() {
+        if (direction == 'E') direction = 'S';
+        else if (direction == 'S') direction = 'W';
+        else if (direction == 'W') direction = 'N';
+        else direction = 'E';
     }
 
     private void turnLeft() {
